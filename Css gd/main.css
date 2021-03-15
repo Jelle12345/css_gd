@@ -1,0 +1,116 @@
+@import url("normalise.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url('code.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50% 100%;
+  background-position: right;
+  background-color: #f7f6f2;
+}
+
+.main {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 300%;
+  color: #363533;
+  height: 17em;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 350px;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 300%;
+  color: #363533;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  left: 350px;
+}
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f7f6f2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: sans-serif;
+}
+
+.nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #f1f1f1;
+}
+
+.nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
+
+.navOpen {
+  font-size: 40px;
+  cursor: pointer;
+  align-items: center;
+  color: #363533;
+  position: fixed;
+  left: 10px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.Project {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  height: 300px
+}
+
+.text {
+  padding: 10px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.projectH1 {
+  position: relative;
+  left: 45px;
+}
+
+#SecRow {
+  position: relative;
+  top: 50px
+}

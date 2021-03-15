@@ -1,0 +1,42 @@
+@import url("normalise.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.3fr 7.37fr;
+  grid-template-areas: "head photo"
+                       "centre photo"
+                       "centre photo";
+}
+
+#head {
+  grid-area: head;
+  text-align: center;
+  height: 5em;
+}
+
+#centre {
+  grid-area: centre;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+
+#photo {
+  background-image: url('code.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50% 100%;
+  background-position: right;
+  grid-area: photo;
+}
+
+iframe {
+  width: 900px;
+  height: 1060px;
+}
